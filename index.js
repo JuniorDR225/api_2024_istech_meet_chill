@@ -17,6 +17,7 @@ const database = [
 // Endpoint pour vérifier l'identifiant
 app.post("/verify", (req, res) => {
     const { id } = req.body;
+    console.log(id);
 
     // Vérifier si l'identifiant existe dans la base
     const exists = database.some((entry) => entry.id === id);
