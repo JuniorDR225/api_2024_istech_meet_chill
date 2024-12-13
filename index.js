@@ -1,35 +1,30 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-
+const cors = require("cors");
 const app = express();
 const port = 3000;
 
-// Middleware
-app.use(express.static(__dirname));
-app.use(bodyParser.json());
+// Middleware pour le traitement des requêtes JSON
+app.use(cors());
+app.use(express.json());
 
-// Tableau JSON servant de base de données
-const qrCodes = [
-    { value: "12345" },
-    { value: "abcdef" },
-    { value: "qrcode2024" },
-    { value: "MEET&CHILL 01" }
+// Exemple de données JSON
+const database = [
+    { id: "1234", name: "Débordo" },
+    { id: "5678", name: "Arafat" },
+    { id: "9101", name: "Josey" },
 ];
 
-// Route pour vérifier le QR code
+// Endpoint pour vérifier l'identifiant
 app.post("/verify", (req, res) => {
-    const { qrData } = req.body;
+    const { id } = req.body;
 
-    const exists = qrCodes.some(qr => qr.value === qrData);
+    // Vérifier si l'identifiant existe dans la base
+    const exists = database.some((entry) => entry.id === id);
 
-    if (exists) {
-        res.json({ exists: true });
-    } else {
-        res.json({ exists: false });
-    }
+    res.json({ exists });
 });
 
 // Démarrer le serveur
 app.listen(port, () => {
-    console.log(`Serveur démarré sur http://localhost:${port}`);
+    console.log(`Serveur en écoute sur http://localhost:${port}`);
 });
