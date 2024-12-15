@@ -52,7 +52,7 @@ app.post("/verify", (req, res) => {
     res.json({ success: true, message: `${verifiedEntry.name} vérifié avec succès.` });
   } else {
     // Si l'identifiant n'existe pas
-    res.status(400).json({ success: false, message: "Code invalide ou déjà utilisé." });
+    res.status(400).json({ success: false, message: "Code invalide ." });
   }
 });
 
