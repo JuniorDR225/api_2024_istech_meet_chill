@@ -122,7 +122,7 @@ let database = [
   { "id": "6UJM399N", "name": "DIABY MAMADOU" },
   { "id": "V13KOJXU", "name": "Oule Christ" },
   { "id": "2U6EAO8A", "name": "Pape Diarra" },
-  { "id": "B9MDQ5CH", "name": "Bamba Sindé" },
+  { "id": "B9MDQ5CH", "name": "KOUAKOU Sindé" },
   { "id": "6MOV1H20", "name": "TRIA HENOC" },
   { "id": "3NULBEMD", "name": "Amangoua Ingrid" },
   { "id": "HMCOH4L7", "name": "Ouayogo Adama" },
