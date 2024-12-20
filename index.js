@@ -122,7 +122,7 @@ let database = [
   { "id": "6UJM399N", "name": "DIABY MAMADOU" },
   { "id": "V13KOJXU", "name": "Oule Christ" },
   { "id": "2U6EAO8A", "name": "Pape Diarra" },
-  { "id": "B9MDQ5CH", "name": "KOUAKOU Sindé" },
+  { "id": "B9MDQ5CH", "name": "BAMBA Sindé" },
   { "id": "6MOV1H20", "name": "TRIA HENOC" },
   { "id": "3NULBEMD", "name": "Amangoua Ingrid" },
   { "id": "HMCOH4L7", "name": "Ouayogo Adama" },
@@ -186,7 +186,6 @@ let database = [
   { id: "6UJM399N", name: "DIABY MAMADOU" },
   { id: "V13KOJXU", name: "Oule Christ" },
   { id: "2U6EAO8A", name: "Pape Diarra" },
-  { id: "B9MDQ5CH", name: "Bamba Sindé" },
   { id: "6MOV1H20", name: "TRIA HENOC" },
   { id: "3MR9KEAK", name: "Tano Joseph Emmanuel" },
   { id: "E7L4HTEZ", name: "Bonkoungou Wendyam" },
@@ -223,7 +222,7 @@ let database = [
   { id: "EXQYX37V", name: "Kouassi Yann" },
   { id: "QK6XCIPU", name: "Doumbia Moussa" },
   { id: "NZF4OLJC", name: "TOURÉ EMMANUEL" },
-  { id: "TY7AFY1GCHILL", name: "Kouakou Stéphanie" }
+  { id: "TY7AFY1GCHILL", name: "KOUAKOU STEPHANE" }
   
 ];
 
